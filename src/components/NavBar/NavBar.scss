@@ -1,0 +1,62 @@
+@import '../SearchBar/Searchbar';
+
+// at least 1280x768
+
+.navwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  height: 50px;
+  width: 100%;
+  border-bottom: 0.5px solid rgb(204, 204, 204);
+  border-radius: 0px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex: 1;
+
+  max-width: 1200px;
+  min-width: 768px;
+}
+
+.navitem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gray;
+}
+
+.navitem:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+#navlogo:hover {
+  background: white;
+}
+
+.navlogoimg {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  #navlogo {
+    order: 0 !important;
+  }
+  .navbar {
+    flex-wrap: wrap !important;
+    min-width: 0px !important;
+  }
+  .navitem {
+    order: 2 !important;
+  }
+  .searchBar {
+    order: 1 !important;
+    width: 100% !important;
+  }
+}
